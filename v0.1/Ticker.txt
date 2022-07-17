@@ -1,0 +1,168 @@
+class Ticker(yfinance.base.TickerBase)
+ |  Ticker(ticker, session=None)
+ |
+ |  Method resolution order:
+ |      Ticker
+ |      yfinance.base.TickerBase
+ |      builtins.object
+ |
+ |  Methods defined here:
+ |
+ |  __repr__(self)
+ |      Return repr(self).
+ |
+ |  option_chain(self, date=None, proxy=None, tz=None)
+ |
+ |  ----------------------------------------------------------------------
+ |  Readonly properties defined here:
+ |
+ |  actions
+ |
+ |  analysis
+ |
+ |  balance_sheet
+ |
+ |  balancesheet
+ |
+ |  calendar
+ |
+ |  cashflow
+ |
+ |  dividends
+ |
+ |  earnings
+ |
+ |  earnings_dates
+ |
+ |  earnings_history
+ |
+ |  financials
+ |
+ |  info
+ |
+ |  institutional_holders
+ |
+ |  isin
+ |
+ |  major_holders
+ |
+ |  mutualfund_holders
+ |
+ |  news
+ |
+ |  options
+ |
+ |  quarterly_balance_sheet
+ |
+ |  quarterly_balancesheet
+ |
+ |  quarterly_cashflow
+ |
+ |  quarterly_earnings
+ |
+ |  quarterly_financials
+ |
+ |  recommendations
+ |
+ |  shares
+ |
+ |  splits
+ |
+ |  sustainability
+ |
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from yfinance.base.TickerBase:
+ |
+ |  __init__(self, ticker, session=None)
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |
+ |  get_actions(self, proxy=None)
+ |
+ |  get_analysis(self, proxy=None, as_dict=False, *args, **kwargs)
+ |
+ |  get_balance_sheet(self, proxy=None, as_dict=False, freq='yearly')
+ |
+ |  get_balancesheet(self, proxy=None, as_dict=False, freq='yearly')
+ |
+ |  get_calendar(self, proxy=None, as_dict=False, *args, **kwargs)
+ |
+ |  get_cashflow(self, proxy=None, as_dict=False, freq='yearly')
+ |
+ |  get_dividends(self, proxy=None)
+ |
+ |  get_earnings(self, proxy=None, as_dict=False, freq='yearly')
+ |
+ |  get_earnings_dates(self, proxy=None)
+ |
+ |  get_earnings_history(self, proxy=None)
+ |
+ |  get_financials(self, proxy=None, as_dict=False, freq='yearly')
+ |
+ |  get_info(self, proxy=None, as_dict=False, *args, **kwargs)
+ |
+ |  get_institutional_holders(self, proxy=None, as_dict=False, *args, **kwargs)
+ |
+ |  get_isin(self, proxy=None)
+ |
+ |  get_major_holders(self, proxy=None, as_dict=False, *args, **kwargs)
+ |
+ |  get_mutualfund_holders(self, proxy=None, as_dict=False, *args, **kwargs)
+ |
+ |  get_news(self, proxy=None)
+ |
+ |  get_recommendations(self, proxy=None, as_dict=False, *args, **kwargs)
+ |
+ |  get_shares(self, proxy=None, as_dict=False, *args, **kwargs)
+ |
+ |  get_splits(self, proxy=None)
+ |
+ |  get_sustainability(self, proxy=None, as_dict=False, *args, **kwargs)
+ |
+ |  history(self, period='1mo', interval='1d', start=None, end=None, prepost=False, actions=True, auto_adjust=True, back_adjust=False, proxy=None, rounding=False, tz=None, timeout=None, **kwargs)
+ |      :Parameters:
+ |          period : str
+ |              Valid periods: 1d,5d,1mo,3mo,6mo,1y,2y,5y,10y,ytd,max
+ |              Either Use period parameter or use start and end
+ |          interval : str
+ |              Valid intervals: 1m,2m,5m,15m,30m,60m,90m,1h,1d,5d,1wk,1mo,3mo
+ |              Intraday data cannot extend last 60 days
+ |          start: str
+ |              Download start date string (YYYY-MM-DD) or _datetime.
+ |              Default is 1900-01-01
+ |          end: str
+ |              Download end date string (YYYY-MM-DD) or _datetime.
+ |              Default is now
+ |          prepost : bool
+ |              Include Pre and Post market data in results?
+ |              Default is False
+ |          auto_adjust: bool
+ |              Adjust all OHLC automatically? Default is True
+ |          back_adjust: bool
+ |              Back-adjusted data to mimic true historical prices
+ |          proxy: str
+ |              Optional. Proxy server URL scheme. Default is None
+ |          rounding: bool
+ |              Round values to 2 decimal places?
+ |              Optional. Default is False = precision suggested by Yahoo!
+ |          tz: str
+ |              Optional timezone locale for dates.
+ |              (default data is returned as non-localized dates)
+ |          timeout: None or float
+ |              If not None stops waiting for a response after given number of
+ |              seconds. (Can also be a fraction of a second e.g. 0.01)
+ |              Default is None.
+ |          **kwargs: dict
+ |              debug: bool
+ |                  Optional. If passed as False, will suppress
+ |                  error message printing to console.
+ |
+ |  stats(self, proxy=None)
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from yfinance.base.TickerBase:
+ |
+ |  __dict__
+ |      dictionary for instance variables (if defined)
+ |
+ |  __weakref__
+ |      list of weak references to the object (if defined)
